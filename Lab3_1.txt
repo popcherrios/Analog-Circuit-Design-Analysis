@@ -1,0 +1,16 @@
+*******Lab3_1*********
+
+I 0 1 8m
+
+R1 1 0 3k
+H1 1 2 Vmeas 4k
+Vmeas 4 3 DC 0
+R2 2 0 6k
+R3 3 1 2k
+R4 4 0 1k
+I2 4 3 2m
+
+.TRAN 1m 5m
+.PLOT TRAN V(1)
+.PROBE
+.END

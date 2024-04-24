@@ -1,0 +1,32 @@
+
+**** 02/06/23 17:45:35 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ *******Lab3_1*********
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+I 0 1 8m
+
+R1 1 1 3k
+H1 1 2 Vmeans 4k
+Vmeans 4 3 DC0
+-----------$
+ERROR -- Expecting keyword STIMULUS, saw DC0.
+
+R2 2 1 6k
+R3 3 1 2k
+R4 3 0  1k
+I3 3 2 2m
+
+.TRAN 1m 5m
+.PLOT TRAN V(1)
+.PROBE
+.END
+
